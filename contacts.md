@@ -16,7 +16,7 @@ If you want to come to my office, please drop me a mail first.
 
 ### E-Mail address
 
-luca.baldesi@unitn.it
+luca.baldesi[AT]unitn.it
 
 ### Skype contact
 
