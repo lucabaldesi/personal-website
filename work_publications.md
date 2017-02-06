@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Pubblications
+title: Publications
 subtitle: Papers and other official stuff
 ---
 
