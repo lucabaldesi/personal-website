@@ -1,6 +1,6 @@
 ---
 title:  Building a static, liquid website
-date:   2015-01-17 16:16:01 -0600
+date:   2017-01-17 16:16:01 -0600
 categories: jekyll html5up  
 ---
 

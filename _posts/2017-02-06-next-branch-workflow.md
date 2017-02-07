@@ -1,6 +1,6 @@
 ---
 title:  Flexible GIT workflow
-date:   2015-02-06 
+date:   2017-02-06 
 categories: git 
 ---
 
