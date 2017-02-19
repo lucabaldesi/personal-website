@@ -31,12 +31,12 @@
 		line-height: 1;
 	}
 
-	code {
+	.highlighter-rouge {
+                line-height: 1.1em;
+                padding: 1em;
 	        background-color: #F9F9F9;
                 border: 1px dashed var(--theme-color);
                 color: black;
-                line-height: 1.1em;
-                padding: 1em;
 	}
 
 
