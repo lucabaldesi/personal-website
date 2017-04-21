@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  Jekyll GIT hooks
 date:   2017-02-25 
 categories: jekyll git hooks
@@ -24,7 +25,8 @@ REPO=github
 echo
 echo "==== Sending changes to $REPO repo ===="
 echo
-GIT_SSH_COMMAND="ssh -i /home/baldesi/.ssh/id_rsa_ans" git push --mirror $REPO
+GIT_SSH_COMMAND="ssh -i /home/baldesi/.ssh/id_rsa_ans"\
+	 git push --mirror $REPO
 echo
 echo "==== Generatin website files ===="
 echo

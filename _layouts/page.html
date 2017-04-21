@@ -10,10 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/table.css" />
+		<link rel="stylesheet" href="{{site.url}}/assets/css/main.css" />
+		<link rel="stylesheet" href="{{site.url}}/assets/css/table.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script type="text/javascript" async
+			  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -22,7 +25,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-					<h1><a href="index.html" id="logo">Networks, coding and much much more...</a></h1>
+					<h1><a href="{{site.url}}/index.html" id="logo">Networks, coding and much much more...</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -32,28 +35,28 @@
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="index.html">Home</a></li>
+								<a href="{{site.url}}/index.html">Home</a></li>
 								{% assign words = page.path | split: "_" %}
 								{% if words.first == "work"  %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-									<a href="#">Work</a>
+								<a href="{{site.url}}/work_publications.html">Work</a>
 									{% include work_menu.html %}
 								</li>
-								{% if page.path == "notebook.md" %}
+								{% if page.path == "notebook.md" or page.layout == "post" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="notebook.html">Notebook</a></li>
+								<a href="{{site.url}}/notebook.html">Notebook</a></li>
 								{% if page.path == "contacts.md" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="contacts.html">Contacts</a></li>
+								<a href="{{site.url}}/contacts.html">Contacts</a></li>
 							</ul>
 						</nav>
 
@@ -68,24 +71,6 @@
 
 			<!-- Footer -->
 				<div id="footer">
-					<!--
-					<div class="container">
-						<div class="row">
-							<section class="3u 6u(narrower) 12u$(mobilep)">
-								<h3>Contacts</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-						</div>
-					</div>
-					-->
 
 					<!-- Icons -->
 						<ul class="icons">
@@ -106,12 +91,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="{{site.url}}/assets/js/jquery.min.js"></script>
+			<script src="{{site.url}}/assets/js/jquery.dropotron.min.js"></script>
+			<script src="{{site.url}}/assets/js/skel.min.js"></script>
+			<script src="{{site.url}}/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="{{site.url}}/assets/js/main.js"></script>
 
 	</body>
 </html>

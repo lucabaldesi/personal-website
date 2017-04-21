@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  GNU anyware as middlebox
 date:   2017-02-19
 categories: bash networking

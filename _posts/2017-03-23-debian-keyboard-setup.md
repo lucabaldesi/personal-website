@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  Debian keyboard setup
 date:   2017-03-23
 categories: debian ubuntu keyboard

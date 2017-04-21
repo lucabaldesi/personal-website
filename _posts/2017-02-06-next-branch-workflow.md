@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  Flexible GIT workflow
 date:   2017-02-06 
 categories: git 
