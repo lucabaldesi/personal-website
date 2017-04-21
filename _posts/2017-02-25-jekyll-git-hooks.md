@@ -39,5 +39,8 @@ source /home/baldesi/.bashrc
 repo=/home/baldesi/jekyll_files
 cd $repo
 git --git-dir=$repo/.git --work-tree=$repo pull
-jekyll build --source . --destination /home/baldesi/public_html
+jekyll build --source . --destination /home/baldesi/public_html \
+	--config _config.yml,_config-prod.yml
 ```
+
+The optional *_config-prod.yml* file contains the production environment variables.
