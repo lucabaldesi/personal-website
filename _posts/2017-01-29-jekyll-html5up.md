@@ -5,7 +5,7 @@ date:   2017-01-17 16:16:01 -0600
 categories: jekyll html5up  
 ---
 
-My [website]({{ site.url }}) born today for work needs. I need a simple-to-maintain and elegant solution to showcase my resume and my research activity. To this end I use [Jekyll](https://jekyllrb.com/), a static html file processor and the [html5up](https://html5up.net/) templates.
+My [website]({{ site.baseurl }}) born today for work needs. I need a simple-to-maintain and elegant solution to showcase my resume and my research activity. To this end I use [Jekyll](https://jekyllrb.com/), a static html file processor and the [html5up](https://html5up.net/) templates.
 
 html5up templates are designed by professionals in web design and besides being good looking they have been realized with portability in mind. An html5up based website will maintain the same readability and visual effects on all the supported devices (notebooks, tablet and smartphone).
 
