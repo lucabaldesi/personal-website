@@ -1,0 +1,18 @@
+---
+---
+{{ reference }}
+
+[
+<a href="javascript:toggle_display('{{ entry.key }}-entry')">bibtex</a> 
+{% if entry.preprint %}
+| <a href="{{ entry.preprint }}">preprint version</a> 
+{% endif %}
+{% if entry.software %}
+| <a href="{{ entry.software }}">software</a>
+{% endif %}
+]
+
+
+
+<pre class="highlighter-rouge highlight"  id="{{ entry.key }}-entry"  style="display:none">{{ entry.bibtex }}</pre>
+
