@@ -4,11 +4,6 @@ title:  Data modeling
 date:   2018-06-21 16:16:01 -0600
 categories: statistics stochastic random variable model distribution data
 ---
-$$
-\newcommand{\openopt}{\begin{align}}
-\newcommand{\closeopt}{\end{align}}
-$$
-
 Often it happens to have a stochastic process producing Independent Identically Distributed (IID) variables one has to interpret.
 Let $$\mathbf{X}$$ be our (continuous or discrete) random variable and $$ x_1,\dots,x_n \in \mathbb{R}$$ a random sample we got from it.
 
@@ -21,6 +16,11 @@ In these notes are listed few techniques to build distribution models out of sam
 
 Model guessing techniques include moment method and Maximum Likelihood Estimation (MLE).
 The other class includes Kernel Density Estimation (KDE).
+
+$$
+\newcommand{\openopt}{\begin{align}}
+\newcommand{\closeopt}{\end{align}}
+$$
 
 ## Model guessing
 The first and most simple techniques require to guess a distribution model among the most famous ones (Normal, Gamma, Weibull, etc..) and compute its parameters from the estimated moments.
