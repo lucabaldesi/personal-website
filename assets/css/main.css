@@ -37,6 +37,12 @@
 		white-space: pre-wrap;
 	}
 
+	.mjx-math {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		white-space: pre-wrap;
+	}
+
 	.highlighter-rouge {
                 line-height: 1.1em;
                 padding: 1em;
