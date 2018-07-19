@@ -61,6 +61,12 @@
 								<li>
 								{% endif %}
 								<a href="{{site.baseurl}}/notebook.html">Notebook</a></li>
+								{% if page.path == "links.md" %}
+								<li class="current">
+								{% else %}
+								<li>
+								{% endif %}
+								<a href="{{site.baseurl}}/links.html">Links</a></li>
 								{% if page.path == "contacts.md" %}
 								<li class="current">
 								{% else %}

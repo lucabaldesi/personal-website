@@ -1,0 +1,23 @@
+- name: Open-Polis
+  description: Italian parliament monitoring website. It contains information on currently under-evaluation laws and statistics on peers.
+  url: https://parlamento17.openpolis.it/
+
+- name: WikiCFP
+  description: User-made database of open conferences all around the world.
+  url: http://wikicfp.com/cfp/
+
+- name: Conference Ranking Viewer
+  description: Visualize Microsoft Academic's conference ranking. Several scientific areas are available, conference are displayed according to their ranking.
+  url: http://www.conferenceranks.com/visualization/msar2014.html?visualization=Bubbles
+
+- name: Conference Explorer
+  description: Open-call conference visualizer, with respect to the geographic position. It is currently not working, though...
+  url: https://sec.hpi.de/conference-explorer/ 
+
+- name: H2020 Participant Portal
+  description: Explore funding opportunities for European researchers. Specifically pointing at the horizon 2020 framework programme.
+  url: http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/h2020/index.html
+
+- name: CORDIS portal (Community Research and Development Information Service)
+  description: News from the European funding programmes world. It should also provide information on the ongoing European projects (deliverables, deadlines, etc...).
+  url: http://cordis.europa.eu
