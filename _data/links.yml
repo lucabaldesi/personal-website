@@ -2,6 +2,10 @@
   description: Italian parliament monitoring website. It contains information on currently under-evaluation laws and statistics on peers.
   url: https://parlamento17.openpolis.it/
 
+- name: Academic Positions
+  description: PhD, Post-doc and professor open positions all around the globe.
+  url: https://academicpositions.com
+
 - name: WikiCFP
   description: User-made database of open conferences all around the world.
   url: http://wikicfp.com/cfp/
