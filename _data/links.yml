@@ -6,6 +6,14 @@
   description: PhD, Post-doc and professor open positions all around the globe.
   url: https://academicpositions.com
 
+- name: Computing Research Association
+  description: Open academic positions in USA.
+  url: https://cra.org/ads/
+
+- name: Eurosys open positions
+  description: PhD, Post-doc, professor and engineer open positions world-wide.
+  url: http://jobs.eurosys.org/
+
 - name: WikiCFP
   description: User-made database of open conferences all around the world.
   url: http://wikicfp.com/cfp/

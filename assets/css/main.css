@@ -51,6 +51,9 @@
                 color: black;
 	}
 
+	details {
+		background-color: #EBCEB1;
+	}
 
 	ol.styleless, ul.styleless {
 		list-style: none;
