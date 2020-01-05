@@ -5,3 +5,8 @@ scholar:
         group_by: year
         group_order: descending
         bibliography_template: bib
+
+collections:
+        projects:
+                output: false
+                sort_by: chocolate

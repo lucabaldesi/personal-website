@@ -1,59 +1,22 @@
 ---
 layout: work
 title: Projects
-subtitle: Academic projects I collaborate to
+subtitle: Projects I collaborate to
 ---
 
-<div class="box post">
-	<!-- <img  class="image left" src="images/peerstreamer.jpg" alt="" /> -->
-<div class="inner">
-<h3>Python NetworkX</h3>
-<p>
-NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
-I worked on the spectral graph forge and the internet autonomous system network generators.
+{% assign projs = site.projects | sort: "chocolate" %}
+{% for proj in  projs %}
+	<h3>{{ proj.name }}</h3> 
+	<p>{{ proj.content | markdownify }}
 
-<table>
-	<tr>
-		<th>Webpage:</th>
-		<th><a href="https://networkx.github.io/">NetworkX website</a></th>
-	</tr>
-	<tr>
-		<th>Period:</th>
-		<th>January 2018 - October 2019</th>
-	</tr>
-	<tr>
-		<th>Founding:</th>
-		<th>ANS group</th>
-	</tr>
-</p>
-</table>
-</div>
-</div>
-
-<!-- separator -->
-
-<div class="box post">
-	<!-- <img  class="image left" src="images/networkx.jpg" alt="" /> -->
-<div class="inner">
-<h3>Peerstreamer</h3>
-<p>
-PeerStreamer is an open source P2P Media Streaming framework written in C, developed as part of the NAPA-WINE European research project. It includes a streaming engine for the efficient distribution of media streams, a source application for the creation of channels and a player applications to visualize the streams. 
-I designed and implemented most of the software besides coordinating occasional contributors.
-<table>
-	<tr>
-		<th>Webpage:</th>
-		<th><a href="http://peerstreamer.org/">Peerstreamer website</a></th>
-	</tr>
-	<tr>
-		<th>Period:</th>
-		<th>April 2013 - December 2018</th>
-	</tr>
-	<tr>
-		<th>Founding:</th>
-		<th>ANS group</th>
-	</tr>
-</p>
-</table>
-</div>
-</div>
-
+	{% if proj.website %}
+		<a href={{proj.website}}>Official website</a>
+	{%endif%}
+	{% if proj.website and proj.code_url %}
+		--
+	{%endif%}
+	{% if proj.code_url %}
+		<a href={{proj.code_url}}>Source code</a>
+	{%endif%}
+	</p>
+{% endfor %}
