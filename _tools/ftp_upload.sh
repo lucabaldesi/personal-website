@@ -16,7 +16,13 @@ if [ $# -eq 2 ]; then
 	if [ -d $DIR ]; then
 		echo "Entering $DIR"
 		cd $DIR
-		echo 'echo "mput *" | gftp-text ftp://${user}:${pass}@${server}:${port}/www'
+		gftp-text ftp://${user}:${pass}@${server}:${port}/www <<EOF
+binary
+mput *
+O
+bye
+quit
+EOF
 	else
 		echo "Directory $DIR not found. Did you compile your site?"
 	fi
