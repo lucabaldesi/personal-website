@@ -2,7 +2,13 @@
 server=ftp.cluster029.hosting.ovh.net
 port=21
 
-DIR=$(dirname $0)/../_site
+WD=$(dirname $0)
+ROOT_DIR=$WD/../
+DIR=$WD/../_production_site
+
+function build() {
+	jekyll build --source $ROOT_DIR --destination $DIR --config _config.yml,_config-prod.yml
+}
 
 function usage() {
 	echo "Usage:"
@@ -13,6 +19,7 @@ if [ $# -eq 2 ]; then
 	user=$1
 	pass=$2
 
+	build
 	if [ -d $DIR ]; then
 		echo "Entering $DIR"
 		cd $DIR
@@ -24,7 +31,7 @@ bye
 quit
 EOF
 	else
-		echo "Directory $DIR not found. Did you compile your site?"
+		echo "Directory $DIR not found. Error?"
 	fi
 else
 	usage
