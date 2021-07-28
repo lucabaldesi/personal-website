@@ -7,7 +7,7 @@ ROOT_DIR=$WD/../
 DIR=$WD/../_production_site
 
 function build() {
-	jekyll build --source $ROOT_DIR --destination $DIR --config _config.yml,_config-prod.yml
+	bundle exec jekyll build --source $ROOT_DIR --destination $DIR --config _config.yml,_config-prod.yml
 }
 
 function usage() {
