@@ -1,0 +1,34 @@
+.project-entry {
+	height: max-content;
+	padding: 0;
+	border: 0;
+	margin: 0%;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.project-title {
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	border: 0;
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 20px 
+}
+.project-entry img {
+	margin: 0%;
+	padding: 0;
+	margin-right:2%;
+	float:left;
+	width:20%;
+	border: 0;
+        margin-top: 10px
+}
+
+.project-desc {
+	width:100%;
+	margin: 0%;
+	padding:0;
+	border: 0;
+}

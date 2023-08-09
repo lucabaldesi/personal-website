@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Notebook
-subtitle: Tips &amp; Tricks
+title:
 ---
 
 {% for post in site.posts %}

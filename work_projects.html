@@ -1,22 +1,37 @@
 ---
-layout: work
-title: Projects
-subtitle: Projects I collaborate to
+layout: default
+title:
 ---
 
 {% assign projs = site.projects | sort: "chocolate" %}
 {% for proj in  projs %}
-	<h3>{{ proj.name }}</h3> 
-	<p>{{ proj.content | markdownify }}
+	<div class=project-entry>
+	<h3 class=project-title>{{ proj.name }}</h3>
+
+	{% if proj.image %}
+        <img src="{{ proj.image }}" alt="" />
+	{%endif%}
+
+	<div class=project-desc>
+        <p>
+	{{ proj.content | markdownify }}
 
 	{% if proj.website %}
 		<a href={{proj.website}}>Official website</a>
 	{%endif%}
+
+        {% if proj.demo %}
+                <a href={{proj.demo}}>demo</a>
+        {%endif%}
+
 	{% if proj.website and proj.code_url %}
 		--
 	{%endif%}
 	{% if proj.code_url %}
 		<a href={{proj.code_url}}>Source code</a>
 	{%endif%}
-	</p>
+
+        </p>
+	</div>
+	</div>
 {% endfor %}

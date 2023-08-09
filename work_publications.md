@@ -1,7 +1,6 @@
 ---
-layout: work
-title: Publications
-subtitle: Papers and other official stuff
+layout: default
+title:
 ---
 
 {% bibliography %}

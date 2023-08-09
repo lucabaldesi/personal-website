@@ -1,16 +1,22 @@
 ---
 layout: default
-title: Contacts
-subtitle: Choose your weapon
+title:
 ---
 
-### Mail address
+### Location
 
-Northeastern University,
-360 Huntington Avenue
-Room 435, ISEC
-Boston, MA, 02115
+ * Office: 6088 Interdisciplinary Science and Engineering Building
+ * ProperData: 6400 Interdisciplinary Science and Engineering Building
 
 ### E-Mail address
 
-luca@baldesi.ovh
+lbaldesi@uci.edu
+
+### Mail address
+
+```
+2200 Engineering Hall EECS Dept
+Samueli School of Engineering
+University of California, Irvine
+Irvine, CA, 92697-2625 USA
+```

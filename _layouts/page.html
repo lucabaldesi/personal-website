@@ -6,12 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Luca Baldesi - {{ page.title }}</title>
+		<title>Luca Baldesi's website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
 		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/table.css" />
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/projects.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script type="text/javascript" async
@@ -35,7 +36,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-					<h1><a href="{{site.baseurl}}/index.html" id="logo">Networks, coding and much much more...</a></h1>
+					<h1><a href="{{site.baseurl}}/index.html" id="logo">Luca Baldesi</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -46,27 +47,28 @@
 								<li>
 								{% endif %}
 								<a href="{{site.baseurl}}/index.html">Home</a></li>
-								{% assign words = page.path | split: "_" %}
-								{% if words.first == "work"  %}
+
+								{% if page.path == "work_projects.html" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="{{site.baseurl}}/work_projects.html">Work</a>
-									{% include work_menu.html %}
-								</li>
+								<a href="{{site.baseurl}}/work_projects.html">Research</a></li>
+
+								{% if page.path == "work_publications.md" %}
+								<li class="current">
+								{% else %}
+								<li>
+								{% endif %}
+								<a href="{{site.baseurl}}/work_publications.html">Publications</a></li>
+
 								{% if page.path == "notebook.md" or page.layout == "post" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
 								<a href="{{site.baseurl}}/notebook.html">Notebook</a></li>
-								{% if page.path == "links.md" %}
-								<li class="current">
-								{% else %}
-								<li>
-								{% endif %}
-								<a href="{{site.baseurl}}/links.html">Links</a></li>
+
 								{% if page.path == "contacts.md" %}
 								<li class="current">
 								{% else %}
@@ -92,6 +94,8 @@
 						<ul class="icons">
 							<li><a href="https://github.com/lucabaldesi" class="icon fa-github"><span class="label">GitHub</span></a></li>
 							<li><a href="https://it.linkedin.com/in/luca-baldesi-0363b68a" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://scholar.google.com/citations?user=RElSymsAAAAJ&hl=en&oi=ao" class="icon fa-google"><span class="label">Google Scholar</span></a></li>
+
 							<!--<li><a href="https://plus.google.com/u/0/100160214586313235222" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
 						</ul>
 
