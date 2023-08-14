@@ -9,11 +9,12 @@ title:
 	<h3 class=project-title>{{ proj.name }}</h3>
 
 	{% if proj.image %}
+	<div class=project-image>
         <img src="{{ proj.image }}" alt="" />
+        </div>
 	{%endif%}
 
 	<div class=project-desc>
-        <p>
 	{{ proj.content | markdownify }}
 
 	{% if proj.website %}
@@ -31,7 +32,6 @@ title:
 		<a href={{proj.code_url}}>Source code</a>
 	{%endif%}
 
-        </p>
 	</div>
 	</div>
 {% endfor %}

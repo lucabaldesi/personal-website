@@ -3,4 +3,4 @@ _production_site/
 Gemfile.lock
 .bundle/
 .jekyll-cache
-vendor/
+_gems/
