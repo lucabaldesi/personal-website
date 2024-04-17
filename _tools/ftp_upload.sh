@@ -23,13 +23,7 @@ if [ $# -eq 2 ]; then
 	if [ -d $DIR ]; then
 		echo "Entering $DIR"
 		cd $DIR
-		gftp-text ftp://${user}:${pass}@${server}:${port}/www <<EOF
-binary
-mput *
-O
-bye
-quit
-EOF
+                lftp -u ${user},${pass} -e "mirror --reverse --verbose ./; quit" ftp://${server}:${port}/www
 	else
 		echo "Directory $DIR not found. Error?"
 	fi
