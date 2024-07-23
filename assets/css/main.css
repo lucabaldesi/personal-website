@@ -8,8 +8,8 @@
 */
 
 :root {
-	/* --theme-color: #37c0fb; */
-	--theme-color: green;
+	--theme-color: #37c0fb;
+	/* --theme-color: green; */
 }
 
 /* Reset */
@@ -2038,7 +2038,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		border-radius: 5px;
+		border-radius: 200px;
 	}
 
 		.image img {
@@ -2362,7 +2362,7 @@
 
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
+		padding: 0em 0 0 0;
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
@@ -2604,7 +2604,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 1em 0 1em 0;
 	}
 
 		#footer a {
@@ -2689,11 +2689,11 @@
 		/* Header */
 
 			#header {
-				padding: 2em 0 0 0;
+				padding: 0.25em 0 0 0;
 			}
 
 				#header h1 {
-					padding: 0 0 1.75em 0;
+					padding: 0 0 0.25em 0;
 				}
 
 		/* Banner */
@@ -2795,7 +2795,7 @@
 				}
 
 			.box.post .inner {
-				margin-left: calc(20% + 2em);
+				margin-left: calc(20% + 4em);
 			}
 
 			.box.post .image {

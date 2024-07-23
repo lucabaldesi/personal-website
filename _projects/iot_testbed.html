@@ -1,0 +1,12 @@
+---
+name: IoT device testbed
+image: images/iot_testbed.png
+chocolate: 96
+---
+
+Testing and validating both off-the-shelf and prototype IoT devices require an automated infrastructure.
+I have designed, implemented, and deployed a testbed to automatize the initialization of experiments focused on network traffic analysis.
+
+The testbed manages a WiFi network the devices are connected to.
+Each device is communicating on a dedicated VLAN to avoid cross-experiment interference.
+The devices are registered in the main server and researchers can reserve their usage and automatically start collecting their network traffic through a web interface.

@@ -5,8 +5,10 @@ title:
 
 ### Location
 
- * Office: 6088 Interdisciplinary Science and Engineering Building
- * ProperData: 6400 Interdisciplinary Science and Engineering Building
+__Office__: 6088 ISEB, Interdisciplinary Science and Engineering Building
+
+
+__ProperData Lab__: 6400 ISEB, Interdisciplinary Science and Engineering Building
 
 ### E-Mail address
 
