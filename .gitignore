@@ -4,3 +4,4 @@ Gemfile.lock
 .bundle/
 .jekyll-cache
 _gems/
+.DS_Store

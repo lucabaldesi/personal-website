@@ -1,0 +1,27 @@
+---
+layout: default
+title: 
+---
+
+{% assign teachings = site.teachings | sort: "index" %}
+{% for teaching in teachings %}
+
+	<div class=teaching-entry>
+	<h3>{{ teaching.name }}</h3>
+	<div class=teaching-body>
+            <strong>{{teaching.role}}</strong>, {{teaching.venue}}, {{teaching.period}}
+            {% if teaching.syllabus %}
+                [<a href={{teaching.syllabus}}>Syllabus</a>]
+            {% endif %}
+            <br>
+            {{teaching.type}}
+            {% if teaching.attendance %}
+            , {{teaching.attendance}}
+            {% endif %}
+            , duration: {{teaching.length}}
+        </div>
+        </div>
+
+
+
+{% endfor %}

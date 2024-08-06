@@ -55,7 +55,7 @@
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="{{site.baseurl}}/work_projects.html">Research</a></li>
+								<a href="{{site.baseurl}}/work_projects.html">Projects</a></li>
 
 								{% if page.path == "work_publications.md" %}
 								<li class="current">
@@ -64,19 +64,26 @@
 								{% endif %}
 								<a href="{{site.baseurl}}/work_publications.html">Publications</a></li>
 
+								{% if page.path == "teaching.html" %}
+								<li class="current">
+								{% else %}
+								<li>
+								{% endif %}
+								<a href="{{site.baseurl}}/teaching.html">Teaching</a></li>
+
 								{% if page.path == "notebook.md" or page.layout == "post" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="{{site.baseurl}}/notebook.html">Notebook</a></li>
+								<a href="{{site.baseurl}}/notebook.html">Blog</a></li>
 
 								{% if page.path == "contacts.md" %}
 								<li class="current">
 								{% else %}
 								<li>
 								{% endif %}
-								<a href="{{site.baseurl}}/contacts.html">Contacts</a></li>
+								<a href="{{site.baseurl}}/contacts.html">Contact</a></li>
 							</ul>
 						</nav>
 

@@ -10,3 +10,5 @@ collections:
         projects:
                 output: false
                 sort_by: chocolate
+        teachings:
+                output: false
