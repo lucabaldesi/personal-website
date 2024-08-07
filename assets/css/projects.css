@@ -49,3 +49,11 @@
 .teaching-body {
     margin-bottom: 1em;
 }
+
+ol.bibliography {
+    list-style: disc;
+}
+
+ol.bibliography li {
+    margin-bottom: 1em;
+}

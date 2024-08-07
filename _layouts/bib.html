@@ -1,11 +1,14 @@
 ---
 ---
-{{ reference }}
+{{ reference | replace_first: 'Baldesi, L.', '<b>Baldesi, L.</b>' }}
 
+{% if entry.award %}
+<strong>{{ entry.award }}</strong>
+{% endif %}
 [
 <a href="javascript:toggle_display('{{ entry.key }}-entry')">bibtex</a> 
-{% if entry.preprint %}
-| <a href="{{ entry.preprint }}">preprint version</a> 
+{% if entry.pdf %}
+| <a href="{{ entry.pdf }}">PDF</a> 
 {% endif %}
 {% if entry.software %}
 | <a href="{{ entry.software }}">software</a>
