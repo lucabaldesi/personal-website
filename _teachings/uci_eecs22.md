@@ -1,5 +1,5 @@
 ---
-name: EECS 22 - Advanced C Programmiing
+name: EECS 22 - Advanced C Programming
 type: Undergraduate course
 period: Winter 2024-2025
 venue: University of California, Irvine
