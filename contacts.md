@@ -5,14 +5,14 @@ title:
 
 ### Location
 
-__Office__: 6088 ISEB, Interdisciplinary Science and Engineering Building
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__Office__: 6088 ISEB, Interdisciplinary Science and Engineering Building
 
 
-__ProperData Lab__: 6400 ISEB, Interdisciplinary Science and Engineering Building
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__ProperData Lab__: 6400 ISEB, Interdisciplinary Science and Engineering Building
 
 ### E-Mail address
 
-lbaldesi@uci.edu
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lbaldesi@uci.edu
 
 ### Mail address
 
